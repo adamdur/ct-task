@@ -1,0 +1,8 @@
+.idea
+*.iml
+node_modules
+dist
+.DS_Store
+ct-common-lib/lib
+*/setup.sh
+ssh.sh

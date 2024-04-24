@@ -1,0 +1,43 @@
+{
+  "name": "ct-common-lib",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "start:dev": "nodemon --watch 'src/**/*' --exec 'ts-node' src/index.ts",
+    "seed": "ts-node scripts/seed.ts",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint --ext .ts,.tsx,.json .",
+    "lint:fix": "eslint --ext .ts,.tsx,.json --fix .",
+    "prettier-check": "prettier --check \"src/**/*.{ts,tsx,scss}\"",
+    "prettier-write": "prettier --write \"src/**/*.{ts,tsx,scss}\"",
+    "validate": "npm run prettier-check && npm run lint && npm run type-check"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.10.4",
+    "ioredis": "^5.4.1",
+    "pg": "^8.11.5",
+    "pino": "^8.20.0",
+    "sequelize": "^6.37.3"
+  },
+  "devDependencies": {
+    "@types/amqplib": "^0.10.5",
+    "@types/node": "^20.12.7",
+    "@types/sequelize": "^4.28.20",
+    "@typescript-eslint/eslint-plugin": "^7.7.0",
+    "@typescript-eslint/parser": "^7.7.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "nodemon": "^3.1.0",
+    "prettier": "^3.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "description": ""
+}
