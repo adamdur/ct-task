@@ -42,6 +42,12 @@ For common library adjustments, you can link the library to services package.jso
 ```
 After changes, run `npm run build` in **ct-common-lib** and `npm install` in service (**api-service** or **rating-service**).
 
+### Postgres and Rabbit UI:
+After successful docker build, you can access adminer UI: http://localhost:8080/
+
+After successful docker build, you can access RabbitMQ UI: http://localhost:15672/
+
+
 ## Production
 For "production" mode, **docker-compose.yml** is prepared to build all services together.
 
